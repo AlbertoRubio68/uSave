@@ -1,0 +1,115 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: #fefae0;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.about-us {
+    padding: 3rem;
+  background-color: #fefae0;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  .about-us-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem; // Espacio entre la imagen y el texto
+  img {
+    height: 50px; // Ajusta el tamaño de la imagen según sea necesario
+    width: auto; // Mantiene la proporción de la imagen
+  }
+}
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+
+  img {
+    height: 40px;
+    width: auto;
+  }
+}
+button,
+button.mat-button,
+button[mat-button] {
+  color: #111 !important; // Forzar color oscuro
+}
+button{
+  color: #111; // Texto oscuro para contraste
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  
+}
+button:hover {
+  background-color: #ffe066; // Amarillo suave
+  color: #111; // Más contraste aún
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.18);
+}
+.hero {
+  background-image: url('https://as1.ftcdn.net/v2/jpg/02/59/37/90/1000_F_259379069_QPx9JLvVpJcDgS1zlSiXukAFn81KjUs0.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 4rem 2rem;
+  height: 40rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+
+  .hero-text {
+    max-width: 600px;
+    margin: 2rem;
+    color: hsl(0, 0%, 0%);
+    background: rgb(255, 243, 216); // Fondo semitransparente para mejor legibilidad
+    padding: 2rem;
+    border-radius: 1rem;
+
+    h1 {
+      margin: 0rem;
+      line-height: 1.2; // Mejor separación entre líneas
+      word-break: break-word; // Evita que se pisen palabras largas
+    }
+
+  }
+
+  .hero-text .button-right {
+    display: flex;
+    justify-content: flex-end;
+
+  }
+
+  .hero-text .button-right button {
+    background-color: #ffe066; // Amarillo suave
+    color: #333; // Texto oscuro para contraste
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem 2rem;
+    font-weight: bold;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+  }
+
+  .hero-text .button-right button:hover {
+    background-color: rgb(255, 252, 162); // Amarillo más intenso al pasar el ratón
+    color: #111; // Más contraste aún
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.18);
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background: #fafafa;
+  border-top: 1px solid #ddd;
+}
