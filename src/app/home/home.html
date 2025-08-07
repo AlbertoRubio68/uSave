@@ -34,13 +34,32 @@
     <p>uSave és una iniciativa dedicada a la formació en Suport Vital Bàsic i Desfibril·lació Automàtica Externa
       (SVB-DAE), amb l'objectiu de millorar la seguretat i salut de la comunitat.</p>
   </div>
-</main>
-<footer id="footer">
-  <div>
-    <h3>Collabora amb Nosaltres</h3>
-    <p>Uneix-te com a partner per fomentar la formació en salut.</p>
+  <div class="formacion">
+    <div class="formacion-header">
+      <h2>Formcaions</h2>
+    </div>
+    <p>uSave és una iniciativa dedicada a la formació en Suport Vital Bàsic i Desfibril·lació Automàtica Externa
+      (SVB-DAE), amb l'objectiu de millorar la seguretat i salut de la comunitat.</p>
+    <mat-grid-list cols="4" rowHeight="100px">
+      @for (tile of tiles; track tile) {
+      <mat-grid-tile class="grid-tile" [colspan]="tile.cols" [rowspan]="tile.rows" [style.background]="tile.color">
+        <div>
+          <h1>{{tile.title}}</h1>
+          <div>{{tile.text}}</div>
+        </div>
+      </mat-grid-tile>
+      }
+    </mat-grid-list>
   </div>
-  <div>
+</main>
+<footer class="footer"id="footer">
+    <div class="footer-header">
+      <h2>Collabora amb Nosaltres</h2>
+          <p>Uneix-te com a partner per fomentar la formació en salut.</p>
+
+    </div>
+
+       <div>
     <h3>Contacte</h3>
     <p>Xavier Gomez</p>
   </div>

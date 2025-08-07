@@ -8,7 +8,7 @@
 }
 
 .about-us {
-    padding: 3rem;
+    padding: 4rem;
   background-color: #fefae0;
   color: #333;
   text-decoration: none;
@@ -24,7 +24,49 @@
   }
 }
 }
+.mat-grid-tile-content * {
+  text-align: left !important;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+}
+.formacion {
+  padding: 4rem;
+ 
+ // background-color: #fefae0;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
 
+  .formacion-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem; // Espacio entre la imagen y el texto
+    img {
+      height: 50px; // Ajusta el tamaño de la imagen según sea necesario
+      width: auto; // Mantiene la proporción de la imagen
+    }
+  }
+}
+.footer {
+  padding: 2rem;
+ 
+  background-color: #d3d3d3;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+
+  .footer-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem; // Espacio entre la imagen y el texto
+    img {
+      height: 50px; // Ajusta el tamaño de la imagen según sea necesario
+      width: auto; // Mantiene la proporción de la imagen
+    }
+  }
+}
 .logo {
   display: flex;
   align-items: center;
